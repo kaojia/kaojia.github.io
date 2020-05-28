@@ -22,7 +22,7 @@ License: https://bootstrapmade.com/license/
 
 --activities部分--
 1.頁面-台灣癌登資料：改變圖片放置
-2.頁面-中經院：利用bootstrap改變圖片放置，及更改指標顏色
+2.頁面-中經院：利用bootstrap改變圖片放置，及更改指標顏色
 3.頁面-服務隊：利用owl-carousel變換圖片
 
-
+但不知道為何網頁圖片跑的超慢
