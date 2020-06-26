@@ -1,5 +1,3 @@
-$(() => {
-    // 當文件ready後執行
 /**自己設計的數學函式等 */
 
 /**產生一個從start到end的整數亂數
@@ -40,6 +38,14 @@ var getDiffArr = (arr, num) => {
     }
     return arrOut;
 }
+
+
+
+
+$(() => {
+    // 當文件ready後執行
+
+
 
 
     $('#confirm').hide()
