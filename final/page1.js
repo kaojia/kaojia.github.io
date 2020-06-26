@@ -1,3 +1,9 @@
+
+
+
+$(() => {
+    // 當文件ready後執行
+
 var RandomInt = (start, end) => {
 
     let n = end - start + 1
@@ -31,11 +37,9 @@ var getDiffArr = (arr, num) => {
     return arrOut;
 }
 
-
-
-$(() => {
-    // 當文件ready後執行
-
+    
+    
+    
     $('#confirm').hide()
 
     $('#main').on('click', () => {
