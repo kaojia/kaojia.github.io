@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    background-image: url(./img/low-angle-photography-of-nature-under-cloudy-sky-881641.jpg);
+    background-size: cover;
+}
+
+
+p {
+    font-weight: 400px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 60px;
+    letter-spacing: 5px;
+    font-weight: 100;
+
+}
+
+.talk {
+    font-weight: 400px;
+    font-size: 25px;
+}
+
+.modal-dialog {
+    max-width: 1000px;
+    margin: 1.75rem auto;
+}
+
+.btn-secondary {
+    background-color: #596b77;
+}
+
+.cakepic {
+    width: 930px;
+
+}
+
+.jumbotro {
+    background-color: #607d8ba6;
+    color: #FFFFFF;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 30px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    border-top: 1px solid;
+    padding-top: 30px;
+}
+
+#a {
+    background-color: #8ec1d69e;
+}
+
+#b {
+    background-color: #f8ffbc;
+}
+
+#clerk {
+    height: 400px;
+    width: 200px;
+}
+
+#clerk2 {
+    text-align: center;
+}
+
+.icon {
+    width: 100px;
+    height: 100px
+}
+
+.btn1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 10px 9px 10px;
+    border-radius: 10px;
+    transition: 0.5s;
+    border: 2px solid #563615;
+    color: rgb(3, 3, 3);
+    margin: 10px 10px;
+    background: #8dca47;
+
+
+}
+
+.btn1:hover {
+    background-color: #8dca47;
+    border: 2px solid #563615;
+    color: rgb(3, 3, 3);
+    box-shadow: 5px 4px #563615;
+}
+
+.btn1:focus {
+    outline: none;
+}
+
+.btn-get-started {
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 9px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: rgb(0, 0, 0);
+    margin: 10px 10px;
+    background-color: #ffffff5c;
+}
+
+
+
+#main.btn-get-started:hover {
+    background: #121241;
+    border: 2px solid #121241;
+    color: #fff;
+}
+
+
+
+#note.btn-get-started:hover {
+    background: #121241;
+    border: 2px solid #121241;
+    color: #fff;
+}
+
+.btn-get-started:focus {
+    outline: none;
+}
+
+
+#title {
+    height: 150px;
+}
+
+.space {
+    height: 20px;
+}
+
+.space2 {
+    height: 10px;
+}
+
+#doit {
+    background-color: #fbd669;
+    border-radius: 25px;
+}
+
+#return.btn-get-started {
+
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 5px;
+    display: inline-block;
+    padding: 8px 30px 9px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    background-color: #ffffff5c;
+    color: rgb(0, 0, 0);
+    margin: 10px 10px;
+    width: 270px;
+}
+
+#return.btn-get-started:hover {
+    background: #79a00f;
+    border: 2px solid #79a00f;
+    color: #fff;
+}
+
+
+
+#clear.btn-get-started:hover {
+    background: #ffa733;
+    border: 2px solid #ffa733;
+    color: #fff;
+}
+
+#dribtn.btn-get-started:hover {
+    background: #ffa733;
+    border: 2px solid #ffa733;
+    color: #fff;
+}
+
+
+#notepl {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 9px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+}
+
+#cup {
+    height: 400px;
+    width: 400px;
+}
+
+.give:hover {
+    background: #ffa733;
+    border: 2px solid #ffa733;
+    color: #fff;
+}
+
+.new-btn {
+
+    background-color: #fafbfd00;
+    font-weight: 500;
+    font-size: 60px;
+    letter-spacing: 3px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    margin-right: 5px;
+}
+
+.pic {
+    height: 400px;
+    width: 300px
+}
+
+.second {
+    font-weight: 400;
+    background-image: url(./img/對話匡.png);
+    font-size: 23px;
+    text-align: center;
+    display: inline-block;
+    height: 168px;
+    padding: 50px 0px 0px 0px;
+    background-size: contain;
+}
+
+
+#ans {
+    background-color: #fbf6d0;
+    background-image: url(./img/background.png);
+}
+
+#warn2 {
+    background-color: #fbf6d0;
+    background-image: url(./img/background.png);
+}
