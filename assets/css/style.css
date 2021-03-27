@@ -366,9 +366,10 @@ h6 {
 .face {
   width: 40vh;
   height: 40vh;
-  background: url(../img/hero.jpg) center;
+  background: url(../img/hero-bg1.jpg) center;
   background-size: 200%;
-  background-position-y: top;
+  background-position-y: bottom;
+  background-position-y: left;
   position: relative;
   margin-bottom: 3vh;
   border-radius: 50%;
