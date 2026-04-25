@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenny Kao — AI & Cross-Border E-Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">JK<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" data-i18n="nav.home">Home</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-toggle-label" data-i18n="lang.switch">EN</span>
+        </button>
+        <a href="#contact" class="nav-cta" data-i18n="nav.cta">Let's Connect</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg">
+      <!-- Parallax layers — each moves at different speed on mouse -->
+      <div class="hero-gradient"></div>
+      <div class="hero-layer hero-layer--1" data-speed="0.03"></div>
+      <div class="hero-layer hero-layer--2" data-speed="0.05"></div>
+      <div class="hero-layer hero-layer--3" data-speed="0.02"></div>
+      <div class="hero-layer hero-layer--4" data-speed="0.06"></div>
+      <div class="hero-layer hero-layer--5" data-speed="0.04"></div>
+      <!-- Particle canvas -->
+      <canvas id="heroParticles"></canvas>
+      <!-- Noise overlay -->
+      <div class="hero-noise"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-label">—&nbsp; AI &amp; Cross-Border E-Commerce</p>
+      <h1 class="hero-title" data-i18n-html="hero.title">
+        Building <em>AI-Powered</em><br />Solutions for Global Markets
+      </h1>
+      <p class="hero-subtitle" data-i18n-html="hero.subtitle">
+        我是 Jenny Kao，專注於 AI 應用開發與跨境電商策略。<br />
+        結合數據分析、自動化工具與 AI 技術，打造高效的商業解決方案。
+      </p>
+      <a href="#projects" class="btn btn-primary" data-i18n="hero.cta">Explore My Work</a>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <p class="section-label" data-i18n="about.label">—&nbsp; Who I Am</p>
+          <h2 class="section-title" data-i18n-html="about.title">
+            Bridging AI Technology<br />with Business Strategy
+          </h2>
+          <p class="about-text" data-i18n="about.text">
+            擁有公共衛生與數據分析背景，目前任職於 Amazon，負責跨境電商市場拓展。
+            熱衷於運用 AI 與自動化技術解決實際商業問題，從 LINE AI Agent 到市場情報自動化系統，
+            持續探索 AI 在商業場景中的應用可能。
+          </p>
+          <a href="#experience" class="btn btn-outline" data-i18n="about.cta">More About Me</a>
+        </div>
+        <div class="about-right">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number" data-target="6">0</div>
+              <div class="stat-plus">+</div>
+              <p class="stat-label" data-i18n="stats.projects">AI Projects Built</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="3">0</div>
+              <div class="stat-plus">+</div>
+              <p class="stat-label" data-i18n="stats.years">Years in E-Commerce</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="6">0</div>
+              <div class="stat-plus">+</div>
+              <p class="stat-label" data-i18n="stats.markets">Markets Covered</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-target="100">0</div>
+              <div class="stat-plus">%</div>
+              <p class="stat-label" data-i18n="stats.passion">Passion for Innovation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <p class="section-label" data-i18n="projects.label">—&nbsp; AI Projects</p>
+      <h2 class="section-title" data-i18n="projects.title">Featured Work</h2>
+      <p class="section-subtitle" data-i18n="projects.subtitle">結合 AI 技術與商業需求，打造實用的自動化解決方案</p>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Market News — Live Ticker Showcase -->
+        <div class="project-card project-card--featured project-card--news">
+          <div class="news-showcase">
+            <div class="news-header">
+              <div class="news-live-badge">
+                <span class="live-dot"></span> LIVE INTEL
+              </div>
+              <span class="news-date">2026-04-24</span>
+            </div>
+
+            <div class="news-breaking">
+              <div class="news-breaking-track" data-i18n-ticker="news.ticker">
+                <span>伊朗扣押兩艘貨輪升級海峽對峙 · Amazon FBA 3.5% 燃油附加費已生效 · 澳洲 Q1 CPI 下週公布預期飆至 4.8% · UAE 電子發票合規進入倒數 · Westpac 三週內二度調升固定利率 · 美國 $1,660 億關稅退還入口網站上線 ·&nbsp;</span>
+                <span>伊朗扣押兩艘貨輪升級海峽對峙 · Amazon FBA 3.5% 燃油附加費已生效 · 澳洲 Q1 CPI 下週公布預期飆至 4.8% · UAE 電子發票合規進入倒數 · Westpac 三週內二度調升固定利率 · 美國 $1,660 億關稅退還入口網站上線 ·&nbsp;</span>
+              </div>
+            </div>
+
+            <div class="news-cards-stack">
+              <div class="news-mini-card" style="--delay: 0s">
+                <div class="news-mini-tags">
+                  <span class="news-tag news-tag--red" data-i18n="news.tag.logistics">物流</span>
+                  <span class="news-tag news-tag--red" data-i18n="news.tag.geopolitics">地緣政治</span>
+                </div>
+                <p class="news-mini-title" data-i18n="news.card1.title">伊朗扣押兩艘貨輪升級海峽對峙：美伊「雙重封鎖」持續，油價維持 $100/桶</p>
+                <span class="news-mini-source">Reuters · 2026-04-24</span>
+              </div>
+              <div class="news-mini-card" style="--delay: 0.1s">
+                <div class="news-mini-tags">
+                  <span class="news-tag news-tag--amber" data-i18n="news.tag.macro">總經</span>
+                </div>
+                <p class="news-mini-title" data-i18n="news.card2.title">澳洲 Q1 CPI 下週三公布：市場預期 headline 飆至 4.8%，NAB 預測 RBA 5 月升息</p>
+                <span class="news-mini-source">IG Markets · 2026-04-24</span>
+              </div>
+              <div class="news-mini-card" style="--delay: 0.2s">
+                <div class="news-mini-tags">
+                  <span class="news-tag news-tag--blue" data-i18n="news.tag.tax">稅務</span>
+                </div>
+                <p class="news-mini-title" data-i18n="news.card3.title">UAE/SA 電子發票合規倒數：不合規發票將直接喪失 VAT 抵扣權</p>
+                <span class="news-mini-source">Billtrust · 2026-04-24</span>
+              </div>
+              <div class="news-mini-card" style="--delay: 0.3s">
+                <div class="news-mini-tags">
+                  <span class="news-tag news-tag--green" data-i18n="news.tag.trade">貿易</span>
+                </div>
+                <p class="news-mini-title" data-i18n="news.card4.title">美國 $1,660 億關稅退還入口網站正式上線：IEEPA 關稅退款啟動</p>
+                <span class="news-mini-source">CNN · 2026-04-23</span>
+              </div>
+            </div>
+
+            <div class="news-stats-bar">
+              <div class="news-stat">
+                <span class="news-stat-num">45</span>
+                <span class="news-stat-label" data-i18n="news.stat.intel">則情報</span>
+              </div>
+              <div class="news-stat">
+                <span class="news-stat-num">6</span>
+                <span class="news-stat-label" data-i18n="news.stat.categories">大分類</span>
+              </div>
+              <div class="news-stat">
+                <span class="news-stat-num">3</span>
+                <span class="news-stat-label" data-i18n="news.stat.markets">市場覆蓋</span>
+              </div>
+              <div class="news-stat">
+                <span class="news-stat-num" data-i18n="news.stat.daily">每日</span>
+                <span class="news-stat-label" data-i18n="news.stat.autoupdate">自動更新</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-tags" style="position:static; margin-bottom:16px;">
+              <span class="tag tag--red">AI</span>
+              <span class="tag tag--blue">Automation</span>
+              <span class="tag tag--amber">E-Commerce</span>
+            </div>
+            <h3 class="project-title">Amazon Market News<br/>AU / MENA</h3>
+            <p class="project-desc" data-i18n="project1.desc">
+              跨境電商情報站 — 自動彙整澳洲、阿聯酋、沙烏地阿拉伯三大市場的每日商業情報。
+              AI 自動分類為物流、總經、稅務、合規、貿易、地緣政治六大標籤，
+              搭配 GitHub Actions CI/CD 實現每日自動建置部署。
+            </p>
+            <div class="news-architecture">
+              <div class="arch-step">
+                <span class="arch-icon">📝</span>
+                <span class="arch-text">Daily Report</span>
+              </div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-step">
+                <span class="arch-icon">🐍</span>
+                <span class="arch-text">Python Build</span>
+              </div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-step">
+                <span class="arch-icon">⚡</span>
+                <span class="arch-text">CI/CD</span>
+              </div>
+              <span class="arch-arrow">→</span>
+              <div class="arch-step">
+                <span class="arch-icon">🌐</span>
+                <span class="arch-text">Live Site</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>Python</span><span>GitHub Actions</span><span>HTML Parser</span><span>CI/CD</span><span>GitHub Pages</span>
+            </div>
+            <a href="https://kaojia.github.io/amazon-market-news-aumena/" target="_blank" rel="noopener" class="project-link" data-i18n="project1.link">
+              View Live Site <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2: LINE AI Agents — Dual Chat Showcase -->
+        <div class="project-card project-card--featured project-card--line">
+          <div class="line-showcase">
+            <!-- Two phone mockups side by side -->
+            <div class="line-phones">
+
+              <!-- Phone 1: AI Customer Service -->
+              <div class="line-phone">
+                <div class="line-phone-header">
+                  <div class="line-phone-avatar line-phone-avatar--bot">🤖</div>
+                  <div class="line-phone-name">
+                    <span class="line-phone-title" data-i18n="line.phone1.title">Amazon 賣家小幫手</span>
+                    <span class="line-phone-badge">ChatGPT API</span>
+                  </div>
+                </div>
+                <div class="line-chat">
+                  <div class="line-msg line-msg--user">
+                    <div class="line-bubble line-bubble--user" data-i18n="line.chat1.q1">請問 FBA 的費用怎麼計算？</div>
+                  </div>
+                  <div class="line-msg line-msg--bot">
+                    <div class="line-bubble line-bubble--bot" data-i18n="line.chat1.a1">FBA 費用主要包含配送費和倉儲費。配送費依商品尺寸和重量計算，倉儲費則按月計費。建議使用 Revenue Calculator 試算 📊</div>
+                  </div>
+                  <div class="line-msg line-msg--user">
+                    <div class="line-bubble line-bubble--user" data-i18n="line.chat1.q2">UAE 站點需要 VAT 嗎？</div>
+                  </div>
+                  <div class="line-msg line-msg--bot">
+                    <div class="line-bubble line-bubble--bot" data-i18n="line.chat1.a2">是的，UAE 實施 5% VAT。賣家需在 FTA 註冊稅號，並確保發票符合電子發票規範 🇦🇪</div>
+                  </div>
+                  <div class="line-typing">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="line-phone-footer">
+                  <div class="line-input-mock" data-i18n="line.input.placeholder">輸入訊息...</div>
+                </div>
+              </div>
+
+              <!-- Phone 2: Business Card Manager -->
+              <div class="line-phone">
+                <div class="line-phone-header">
+                  <div class="line-phone-avatar line-phone-avatar--card">📇</div>
+                  <div class="line-phone-name">
+                    <span class="line-phone-title" data-i18n="line.phone2.title">展會名片管理</span>
+                    <span class="line-phone-badge">Google Sheet</span>
+                  </div>
+                </div>
+                <div class="line-chat">
+                  <div class="line-msg line-msg--bot">
+                    <div class="line-bubble line-bubble--bot line-bubble--system" data-i18n="line.chat2.welcome">👋 歡迎使用名片管理工具！拍照或輸入名片資訊即可記錄。</div>
+                  </div>
+                  <div class="line-msg line-msg--user">
+                    <div class="line-bubble line-bubble--user" data-i18n="line.chat2.q1">新增：王大明 / TechBrew CEO / david@techbrew.com / +971-50-123-4567</div>
+                  </div>
+                  <div class="line-msg line-msg--bot">
+                    <div class="line-bubble line-bubble--bot" data-i18n="line.chat2.a1">✅ 已新增至 Google Sheet！
+📋 王大明 — TechBrew CEO
+📧 david@techbrew.com
+📍 來源：Dubai Expo 2026</div>
+                  </div>
+                  <div class="line-msg line-msg--user">
+                    <div class="line-bubble line-bubble--user" data-i18n="line.chat2.q2">查詢 TechBrew</div>
+                  </div>
+                  <div class="line-msg line-msg--bot">
+                    <div class="line-bubble line-bubble--bot" data-i18n="line.chat2.a2">🔍 找到 1 筆：
+王大明 · TechBrew CEO
+狀態：待跟進 🟡</div>
+                  </div>
+                </div>
+                <div class="line-phone-footer">
+                  <div class="line-input-mock" data-i18n="line.input.placeholder">輸入訊息...</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Architecture diagram -->
+            <div class="line-arch-bar">
+              <div class="line-arch-flow">
+                <span class="line-arch-node">💬 LINE</span>
+                <span class="line-arch-arrow">→</span>
+                <span class="line-arch-node">⚡ Webhook</span>
+                <span class="line-arch-arrow">→</span>
+                <span class="line-arch-node">🧠 ChatGPT API</span>
+                <span class="line-arch-arrow">/</span>
+                <span class="line-arch-node">📊 Google Sheet</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-tags" style="position:static; margin-bottom:16px;">
+              <span class="tag tag--blue">AI Agent</span>
+              <span class="tag tag--green">LINE Bot</span>
+              <span class="tag tag--amber">Automation</span>
+            </div>
+            <h3 class="project-title">LINE AI Agents</h3>
+            <p class="project-desc" data-i18n="project2.desc">
+              兩款 LINE AI 應用：① 官方帳號 AI 客服 — 串接 ChatGPT API，即時回覆賣家常見問題；
+              ② 展會名片管理工具 — 後台連結 Google Sheet，在外掃展時即時新增、查詢聯絡人紀錄。
+            </p>
+            <div class="crm-features">
+              <div class="crm-feature">
+                <span class="crm-feature-icon">🧠</span>
+                <span class="crm-feature-text" data-i18n="line.feature1">ChatGPT API 智慧回覆</span>
+              </div>
+              <div class="crm-feature">
+                <span class="crm-feature-icon">📇</span>
+                <span class="crm-feature-text" data-i18n="line.feature2">Google Sheet 即時同步</span>
+              </div>
+              <div class="crm-feature">
+                <span class="crm-feature-icon">📱</span>
+                <span class="crm-feature-text" data-i18n="line.feature3">展會現場即時更新</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>Python</span><span>LINE API</span><span>ChatGPT API</span><span>Google Sheet</span><span>Cloud Deploy</span>
+            </div>
+            <a href="https://lin.ee/tIBqCGtD" target="_blank" rel="noopener" class="project-link" data-i18n="project2.link">
+              Add on LINE <span>&rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3: WBR Expansion Dashboard — Interactive Demo -->
+        <div class="project-card project-card--featured project-card--wbr">
+          <div class="wbr-showcase">
+            <!-- WBR Header -->
+            <div class="wbr-header">
+              <div class="wbr-title-row">
+                <span class="wbr-title">WBR W16 2026 — Seller GMS Report</span>
+              </div>
+              <div class="wbr-subtitle">MEA | EU | JP | NSR (DSR+SSR) · ESM | All Sellers</div>
+              <!-- Region tabs -->
+              <div class="wbr-region-tabs">
+                <button class="wbr-region wbr-region--active">MEA - Middle East &amp; Australia</button>
+                <button class="wbr-region">EU - Europe</button>
+                <button class="wbr-region">JP - Japan</button>
+              </div>
+            </div>
+
+            <!-- Market sub-tabs -->
+            <div class="wbr-market-tabs">
+              <span class="wbr-market">🇦🇺 AU - NSR</span>
+              <span class="wbr-market">🇦🇺 AU - ESM</span>
+              <span class="wbr-market wbr-market--active">🇦🇪 AE - NSR (DSR+SSR)</span>
+              <span class="wbr-market">🇦🇪 AE - ESM</span>
+              <span class="wbr-market">🇸🇦 SA - NSR</span>
+              <span class="wbr-market">🇸🇦 SA - ESM</span>
+            </div>
+
+            <!-- Market info bar -->
+            <div class="wbr-info-bar">
+              <span class="wbr-info-flag">🇦🇪 AE — United Arab Emirates (ID: 338801) — NSR (DSR+SSR)</span>
+              <span class="wbr-info-count">70 sellers</span>
+            </div>
+
+            <!-- Data table -->
+            <div class="wbr-table">
+              <div class="wbr-table-head">
+                <span class="wbr-th wbr-th--num">#</span>
+                <span class="wbr-th wbr-th--seller">Seller</span>
+                <span class="wbr-th wbr-th--num-r">W16 2026</span>
+                <span class="wbr-th wbr-th--num-r">W15 2026</span>
+                <span class="wbr-th wbr-th--num-r">WoW %</span>
+                <span class="wbr-th wbr-th--num-r">Units</span>
+                <span class="wbr-th wbr-th--num-r">YTD GMS</span>
+                <span class="wbr-th wbr-th--num-r">YTD Share</span>
+              </div>
+              <div class="wbr-table-body">
+                <div class="wbr-row">
+                  <span class="wbr-td wbr-td--num">1</span>
+                  <span class="wbr-td wbr-td--seller">SolarTech Power</span>
+                  <span class="wbr-td wbr-td--num-r">$1,229</span>
+                  <span class="wbr-td wbr-td--num-r">$2,445</span>
+                  <span class="wbr-td wbr-td--num-r"><span class="wbr-wow wbr-wow--down">▼ 49.8%</span></span>
+                  <span class="wbr-td wbr-td--num-r">19</span>
+                  <span class="wbr-td wbr-td--num-r">$28,672</span>
+                  <span class="wbr-td wbr-td--num-r">34.4%</span>
+                </div>
+                <div class="wbr-row">
+                  <span class="wbr-td wbr-td--num">2</span>
+                  <span class="wbr-td wbr-td--seller">KitchenPro Global</span>
+                  <span class="wbr-td wbr-td--num-r">$872</span>
+                  <span class="wbr-td wbr-td--num-r">$828</span>
+                  <span class="wbr-td wbr-td--num-r"><span class="wbr-wow wbr-wow--up">▲ 5.3%</span></span>
+                  <span class="wbr-td wbr-td--num-r">8</span>
+                  <span class="wbr-td wbr-td--num-r">$6,354</span>
+                  <span class="wbr-td wbr-td--num-r">7.6%</span>
+                </div>
+                <div class="wbr-row">
+                  <span class="wbr-td wbr-td--num">3</span>
+                  <span class="wbr-td wbr-td--seller">VisionTech Display</span>
+                  <span class="wbr-td wbr-td--num-r">$554</span>
+                  <span class="wbr-td wbr-td--num-r">$308</span>
+                  <span class="wbr-td wbr-td--num-r"><span class="wbr-wow wbr-wow--up">▲ 80.0%</span></span>
+                  <span class="wbr-td wbr-td--num-r">2</span>
+                  <span class="wbr-td wbr-td--num-r">$2,713</span>
+                  <span class="wbr-td wbr-td--num-r">3.3%</span>
+                </div>
+                <div class="wbr-row">
+                  <span class="wbr-td wbr-td--num">4</span>
+                  <span class="wbr-td wbr-td--seller">LuxLight Official</span>
+                  <span class="wbr-td wbr-td--num-r">$524</span>
+                  <span class="wbr-td wbr-td--num-r">$76</span>
+                  <span class="wbr-td wbr-td--num-r"><span class="wbr-wow wbr-wow--up">▲ 590%</span></span>
+                  <span class="wbr-td wbr-td--num-r">9</span>
+                  <span class="wbr-td wbr-td--num-r">$974</span>
+                  <span class="wbr-td wbr-td--num-r">1.2%</span>
+                </div>
+                <div class="wbr-row">
+                  <span class="wbr-td wbr-td--num">5</span>
+                  <span class="wbr-td wbr-td--seller">DataLink Intl Co.</span>
+                  <span class="wbr-td wbr-td--num-r">$430</span>
+                  <span class="wbr-td wbr-td--num-r">$838</span>
+                  <span class="wbr-td wbr-td--num-r"><span class="wbr-wow wbr-wow--down">▼ 48.7%</span></span>
+                  <span class="wbr-td wbr-td--num-r">3</span>
+                  <span class="wbr-td wbr-td--num-r">$22,599</span>
+                  <span class="wbr-td wbr-td--num-r">27.1%</span>
+                </div>
+                <div class="wbr-row">
+                  <span class="wbr-td wbr-td--num">6</span>
+                  <span class="wbr-td wbr-td--seller">HomeStyle Living</span>
+                  <span class="wbr-td wbr-td--num-r">$305</span>
+                  <span class="wbr-td wbr-td--num-r">$294</span>
+                  <span class="wbr-td wbr-td--num-r"><span class="wbr-wow wbr-wow--up">▲ 3.6%</span></span>
+                  <span class="wbr-td wbr-td--num-r">17</span>
+                  <span class="wbr-td wbr-td--num-r">$6,296</span>
+                  <span class="wbr-td wbr-td--num-r">7.6%</span>
+                </div>
+              </div>
+              <div class="wbr-table-fade"></div>
+            </div>
+
+            <!-- Bottom stats -->
+            <div class="wbr-stats">
+              <div class="wbr-stat-item">
+                <span class="wbr-stat-num">70</span>
+                <span class="wbr-stat-label">Sellers</span>
+              </div>
+              <div class="wbr-stat-item">
+                <span class="wbr-stat-num">W16</span>
+                <span class="wbr-stat-label" data-i18n="wbr.stat.latest">最新週報</span>
+              </div>
+              <div class="wbr-stat-item">
+                <span class="wbr-stat-num">6</span>
+                <span class="wbr-stat-label" data-i18n="wbr.stat.markets">市場區域</span>
+              </div>
+              <div class="wbr-stat-item">
+                <span class="wbr-stat-num">AI</span>
+                <span class="wbr-stat-label" data-i18n="wbr.stat.updated">每週更新</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-tags" style="position:static; margin-bottom:16px;">
+              <span class="tag tag--green">Dashboard</span>
+              <span class="tag tag--blue">AI Data</span>
+              <span class="tag tag--amber">Analytics</span>
+            </div>
+            <h3 class="project-title">WBR Expansion<br/>Dashboard</h3>
+            <p class="project-desc" data-i18n="project3.desc">
+              AI 驅動的每週商業報表儀表板，自動更新跨區域大數據。
+              涵蓋 MEA、EU、JP 三大區域，支援 Weekly Overview 快速掌握全局，
+              並可 Deep Dive 到個別賣家層級分析行銷問題。
+            </p>
+            <div class="crm-features">
+              <div class="crm-feature">
+                <span class="crm-feature-icon">🤖</span>
+                <span class="crm-feature-text" data-i18n="wbr.feature1">AI 每週自動更新大數據</span>
+              </div>
+              <div class="crm-feature">
+                <span class="crm-feature-icon">📊</span>
+                <span class="crm-feature-text" data-i18n="wbr.feature2">Weekly Overview 一覽全局</span>
+              </div>
+              <div class="crm-feature">
+                <span class="crm-feature-icon">🔍</span>
+                <span class="crm-feature-text" data-i18n="wbr.feature3">Deep Dive 行銷問題分析</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>AI-Generated</span><span>HTML/JS</span><span>Data Viz</span><span>Encryption</span><span>GitHub Pages</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: CRM Pipeline — Interactive Demo -->
+        <div class="project-card project-card--featured project-card--crm">
+          <div class="crm-showcase">
+            <!-- CRM Header -->
+            <div class="crm-header">
+              <div class="crm-title-row">
+                <span class="crm-title">Pipeline</span>
+                <span class="crm-count" data-i18n="crm.count">234 筆</span>
+              </div>
+              <!-- Country tabs -->
+              <div class="crm-tabs" id="crmTabs">
+                <button class="crm-tab crm-tab--active" data-country="all">
+                  <span class="crm-tab-flag">🌐</span> <span data-i18n="crm.tab.all">全部</span>
+                </button>
+                <button class="crm-tab" data-country="uae">
+                  <span class="crm-tab-flag">🇦🇪</span> UAE
+                </button>
+                <button class="crm-tab" data-country="ksa">
+                  <span class="crm-tab-flag">🇸🇦</span> KSA
+                </button>
+                <button class="crm-tab" data-country="au">
+                  <span class="crm-tab-flag">🇦🇺</span> AU
+                </button>
+              </div>
+            </div>
+
+            <!-- Status filter pills -->
+            <div class="crm-filters">
+              <span class="crm-pill crm-pill--active" data-i18n="crm.filter.all">全部</span>
+              <span class="crm-pill crm-pill--alert" data-i18n="crm.filter.pending">● 待處理 5</span>
+              <span class="crm-pill">Evaluation 29</span>
+              <span class="crm-pill">Commitment 27</span>
+              <span class="crm-pill">Registering 10</span>
+              <span class="crm-pill">FBA Launch 102</span>
+              <span class="crm-pill">On Hold 45</span>
+            </div>
+
+            <!-- Demo table -->
+            <div class="crm-table">
+              <div class="crm-table-head">
+                <span class="crm-col crm-col--num">#</span>
+                <span class="crm-col crm-col--name" data-i18n="crm.col.seller">賣家</span>
+                <span class="crm-col crm-col--brand" data-i18n="crm.col.brand">品牌</span>
+                <span class="crm-col crm-col--contact" data-i18n="crm.col.contact">聯絡人</span>
+                <span class="crm-col crm-col--status">🇦🇪</span>
+                <span class="crm-col crm-col--status">🇸🇦</span>
+                <span class="crm-col crm-col--status">🇦🇺</span>
+              </div>
+              <div class="crm-table-body">
+                <div class="crm-row" data-country="all uae ksa au">
+                  <span class="crm-col crm-col--num">1</span>
+                  <span class="crm-col crm-col--name">TechBrew Co.</span>
+                  <span class="crm-col crm-col--brand">BrewMax</span>
+                  <span class="crm-col crm-col--contact">Alex W.</span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--launch">FBA Launch</span></span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--launch">FBA Launch</span></span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--eval">Evaluation</span></span>
+                </div>
+                <div class="crm-row" data-country="all uae au">
+                  <span class="crm-col crm-col--num">2</span>
+                  <span class="crm-col crm-col--name">GreenLeaf Ltd.</span>
+                  <span class="crm-col crm-col--brand">PureGreen</span>
+                  <span class="crm-col crm-col--contact">Sarah L.</span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--commit">Commitment</span></span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--none">—</span></span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--launch">FBA Launch</span></span>
+                </div>
+                <div class="crm-row" data-country="all uae ksa">
+                  <span class="crm-col crm-col--num">3</span>
+                  <span class="crm-col crm-col--name">SmartHome Inc.</span>
+                  <span class="crm-col crm-col--brand">HomeSense</span>
+                  <span class="crm-col crm-col--contact">David C.</span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--register">Registering</span></span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--launch">FBA Launch</span></span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--none">—</span></span>
+                </div>
+                <div class="crm-row" data-country="all ksa au">
+                  <span class="crm-col crm-col--num">4</span>
+                  <span class="crm-col crm-col--name">FitGear Corp.</span>
+                  <span class="crm-col crm-col--brand">FlexPro</span>
+                  <span class="crm-col crm-col--contact">Mike T.</span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--none">—</span></span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--lost">Lost</span></span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--launch">FBA Launch</span></span>
+                </div>
+                <div class="crm-row" data-country="all uae ksa au">
+                  <span class="crm-col crm-col--num">5</span>
+                  <span class="crm-col crm-col--name">AquaPure Tech</span>
+                  <span class="crm-col crm-col--brand">ClearFlow</span>
+                  <span class="crm-col crm-col--contact">Jenny H.</span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--launch">FBA Launch</span></span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--commit">Commitment</span></span>
+                  <span class="crm-col crm-col--status"><span class="crm-status crm-status--register">Registering</span></span>
+                </div>
+              </div>
+              <!-- Fade overlay -->
+              <div class="crm-table-fade"></div>
+            </div>
+
+            <!-- Bottom stats -->
+            <div class="crm-stats">
+              <div class="crm-stat-item">
+                <span class="crm-stat-num">102</span>
+                <span class="crm-stat-label">FBA Launch</span>
+              </div>
+              <div class="crm-stat-item">
+                <span class="crm-stat-num">27</span>
+                <span class="crm-stat-label">Commitment</span>
+              </div>
+              <div class="crm-stat-item">
+                <span class="crm-stat-num">5</span>
+                <span class="crm-stat-label" data-i18n="crm.stat.pending">待處理</span>
+              </div>
+              <div class="crm-stat-item">
+                <span class="crm-stat-num">3</span>
+                <span class="crm-stat-label" data-i18n="crm.stat.countries">國家</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-info">
+            <div class="project-tags" style="position:static; margin-bottom:16px;">
+              <span class="tag tag--green">CRM</span>
+              <span class="tag tag--blue">AI-Built</span>
+              <span class="tag tag--amber">Productivity</span>
+            </div>
+            <h3 class="project-title">Cross-Border<br/>CRM Pipeline</h3>
+            <p class="project-desc" data-i18n="project4.desc">
+              用 AI 打造的跨境電商 CRM 管理系統，解決公司內部系統速度慢的痛點。
+              核心特色：一眼區分同一客戶在不同國家（UAE / KSA / AU）的上線狀態，
+              自動標記待處理事項，大幅提升日常管理效率。
+            </p>
+            <div class="crm-features">
+              <div class="crm-feature">
+                <span class="crm-feature-icon">🌍</span>
+                <span class="crm-feature-text" data-i18n="crm.feature1">多國狀態一目瞭然</span>
+              </div>
+              <div class="crm-feature">
+                <span class="crm-feature-icon">🔴</span>
+                <span class="crm-feature-text" data-i18n="crm.feature2">待處理自動標記</span>
+              </div>
+              <div class="crm-feature">
+                <span class="crm-feature-icon">⚡</span>
+                <span class="crm-feature-text" data-i18n="crm.feature3">比公司系統快 10 倍</span>
+              </div>
+            </div>
+            <div class="project-tech">
+              <span>AI-Generated</span><span>HTML/JS</span><span>CRM</span><span>Pipeline Mgmt</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== QUOTE BANNER ========== -->
+  <section class="quote-banner">
+    <div class="container">
+      <blockquote class="quote-text">
+        "The best way to predict the future is to build it — with AI."
+      </blockquote>
+      <p class="quote-author">Jenny Kao</p>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <p class="section-label" data-i18n="exp.label">—&nbsp; Experience</p>
+      <h2 class="section-title" data-i18n="exp.title">Professional Journey</h2>
+      <p class="section-subtitle" data-i18n="exp.subtitle">從公共衛生到跨境電商，持續跨領域探索與成長</p>
+
+      <div class="experience-grid">
+
+        <div class="exp-card">
+          <div class="exp-icon">🌏</div>
+          <div class="exp-content">
+            <span class="exp-period" data-i18n="exp1.period">Current</span>
+            <h3 class="exp-title" data-i18n="exp1.title">Amazon — Cross-Border E-Commerce</h3>
+            <p class="exp-desc" data-i18n="exp1.desc">
+              負責 AU / MENA 市場拓展策略，建立自動化市場情報系統，
+              運用 AI 工具提升團隊工作效率與決策品質。
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-icon">🤖</div>
+          <div class="exp-content">
+            <span class="exp-period" data-i18n="exp2.period">Side Projects</span>
+            <h3 class="exp-title" data-i18n="exp2.title">AI Application Developer</h3>
+            <p class="exp-desc" data-i18n="exp2.desc">
+              開發 LINE AI Agent、市場新聞自動化系統、數據儀表板等多項 AI 應用專案，
+              持續探索 LLM、自動化與 AI Agent 的商業應用場景。
+            </p>
+          </div>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-icon">📊</div>
+          <div class="exp-content">
+            <span class="exp-period" data-i18n="exp3.period">Background</span>
+            <h3 class="exp-title" data-i18n="exp3.title">Public Health & Data Analysis</h3>
+            <p class="exp-desc" data-i18n="exp3.desc">
+              公共衛生學背景，具備紮實的數據分析與研究方法論基礎。
+              曾參與疾管署、中經院等機構的研究專案與數據視覺化工作。
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section class="section skills">
+    <div class="container">
+      <p class="section-label" data-i18n="skills.label">—&nbsp; Skills & Tools</p>
+      <h2 class="section-title" data-i18n="skills.title">What I Work With</h2>
+
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon">🐍</div>
+          <span>Python</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">🤖</div>
+          <span>AI / LLM</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">💬</div>
+          <span>LINE API</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">📊</div>
+          <span>Data Analysis</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">⚙️</div>
+          <span>GitHub Actions</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">🌐</div>
+          <span>HTML / CSS / JS</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">☁️</div>
+          <span>Cloud Deploy</span>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon">📈</div>
+          <span>E-Commerce</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <p class="section-label" data-i18n="contact.label">—&nbsp; Get In Touch</p>
+          <h2 class="section-title contact-title" data-i18n-html="contact.title">Let's Build<br />Something Together</h2>
+          <p class="contact-text" data-i18n="contact.text">
+            對 AI 應用、跨境電商或任何合作機會有興趣？歡迎隨時聯繫我。
+          </p>
+          <div class="contact-links">
+            <a href="https://github.com/kaojia" target="_blank" rel="noopener" class="contact-link-item">
+              <span class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              </span>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/chia-wen-kao/" target="_blank" rel="noopener" class="contact-link-item">
+              <span class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+              LinkedIn
+            </a>
+            <a href="mailto:chiawenk@amazon.com" class="contact-link-item">
+              <span class="contact-link-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              Email
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <input type="text" data-i18n-placeholder="form.name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" data-i18n-placeholder="form.email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea data-i18n-placeholder="form.message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" data-i18n="form.submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <a href="#" class="footer-logo">JK<span>.</span></a>
+        <p class="footer-text">AI & Cross-Border E-Commerce</p>
+      </div>
+      <div class="footer-center">
+        <a href="#hero" data-i18n="nav.home">Home</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="footer-right">
+        <p>&copy; 2026 Jenny Kao. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js"></script>
+  <script src="particles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
