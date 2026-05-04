@@ -26,9 +26,9 @@ const translations = {
 
     // Stats
     'stats.projects': 'AI Projects Built',
-    'stats.years': 'Years in E-Commerce',
-    'stats.markets': 'Markets Covered',
-    'stats.passion': 'Passion for Innovation',
+    'stats.languages': 'Working Languages',
+    'stats.hours': 'Hours Saved / Week',
+    'stats.apis': 'APIs Integrated',
 
     // Projects
     'projects.label': '—\u00a0 AI Projects',
@@ -151,9 +151,9 @@ const translations = {
 
     // Stats
     'stats.projects': 'AI Projects Built',
-    'stats.years': 'Years in E-Commerce',
-    'stats.markets': 'Markets Covered',
-    'stats.passion': 'Passion for Innovation',
+    'stats.languages': 'Working Languages',
+    'stats.hours': 'Hours Saved / Week',
+    'stats.apis': 'APIs Integrated',
 
     // Projects
     'projects.label': '—\u00a0 AI Projects',
