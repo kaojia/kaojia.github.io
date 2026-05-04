@@ -36,11 +36,11 @@ const translations = {
     'projects.subtitle': '結合 AI 技術與商業需求，打造實用的自動化解決方案',
 
     // Project 1 — Market News
-    'project1.desc': '跨境電商情報站 — 自動彙整澳洲、阿聯酋、沙烏地阿拉伯三大市場的每日商業情報。AI 自動分類為物流、總經、稅務、合規、貿易、地緣政治六大標籤，搭配 GitHub Actions CI/CD 實現每日自動建置部署。',
+    'project1.desc': '針對新興市場（澳洲、中東）資訊碎片化與語言落差等痛點所開發的全自動情報站。透過 AI 每日自動爬取並摘要物流、稅務、合規與地緣政治等關鍵動態，結合 GitHub Actions 實現 CI/CD 無伺服器自動部署。有效為業務團隊省下大量資料蒐集時間，精準掌握跨國市場脈動。',
     'project1.link': 'View Live Site <span>&rarr;</span>',
 
     // Project 2 — LINE Agents
-    'project2.desc': '兩款 LINE AI 應用：① 官方帳號 AI 客服 — 串接 ChatGPT API，即時回覆賣家常見問題；② 展會名片管理工具 — 後台連結 Google Sheet，在外掃展時即時新增、查詢聯絡人紀錄。',
+    'project2.desc': '專為 B2B 跨境業務場景打造的 LINE 雙引擎應用：① AI 賣家小幫手 — 串接 ChatGPT API，24 小時自動回覆賣家常見的入駐與物流問題，有效過濾並攔截基礎提問。② 展會拓客掃描儀 — 掃描名片即可即時解析並同步至 Google Sheets，徹底告別展後繁瑣的建檔工作，讓業務團隊能將精力 100% 集中於高價值的客戶跟進上。',
     'project2.link': 'Add on LINE <span>&rarr;</span>',
     'line.phone1.title': 'Amazon 賣家小幫手',
     'line.phone2.title': '展會名片管理',
@@ -59,7 +59,7 @@ const translations = {
     'line.feature3': '展會現場即時更新',
 
     // Project 3 — WBR Dashboard
-    'project3.desc': 'AI 驅動的每週商業報表儀表板，自動更新跨區域大數據。涵蓋 MEA、EU、JP 三大區域，支援 Weekly Overview 快速掌握全局，並可 Deep Dive 到個別賣家層級分析行銷問題。',
+    'project3.desc': '專為高階營運會議 (WBR) 設計的自動化數據看板。取代傳統耗時的人工拉表，自動整合中東、歐洲與日本三大賽道的大數據。除了提供一目瞭然的宏觀表現 (Weekly Overview)，更能直接 Drill-down 挖掘個別賣家的行銷瓶頸。將每週報表準備時間極小化，讓團隊核心精力專注於「解決問題」而非「整理數據」。',
     'project3.link': 'View on GitHub <span>&rarr;</span>',
     'wbr.stat.latest': '最新週報',
     'wbr.stat.markets': '市場區域',
@@ -161,11 +161,11 @@ const translations = {
     'projects.subtitle': 'Practical AI solutions built at the intersection of technology and business needs',
 
     // Project 1 — Market News
-    'project1.desc': 'Cross-border e-commerce intelligence hub — automatically aggregates daily business news from Australia, UAE, and Saudi Arabia. AI auto-classifies into 6 categories (logistics, macro, tax, compliance, trade, geopolitics) with GitHub Actions CI/CD for daily automated builds.',
+    'project1.desc': 'A fully automated intelligence hub built to address information fragmentation and language barriers in emerging markets (Australia, Middle East). AI automatically crawls and summarizes key developments in logistics, tax, compliance, and geopolitics daily, with GitHub Actions enabling serverless CI/CD deployment. Saves the business team significant research time while keeping them precisely informed of cross-border market dynamics.',
     'project1.link': 'View Live Site <span>&rarr;</span>',
 
     // Project 2 — LINE Agents
-    'project2.desc': 'Two LINE AI applications: ① Official Account AI Customer Service — powered by ChatGPT API for instant seller FAQ responses; ② Expo Business Card Manager — synced with Google Sheet for real-time contact management during trade shows.',
+    'project2.desc': 'A dual-engine LINE application built for B2B cross-border business scenarios: ① AI Seller Assistant — powered by ChatGPT API, providing 24/7 automated responses to common onboarding and logistics questions, effectively filtering and intercepting basic inquiries. ② Expo Lead Scanner — scans business cards for instant parsing and sync to Google Sheets, eliminating tedious post-expo data entry so the team can focus 100% on high-value follow-ups.',
     'project2.link': 'Add on LINE <span>&rarr;</span>',
     'line.phone1.title': 'Seller AI Assistant',
     'line.phone2.title': 'Expo Card Manager',
@@ -184,7 +184,7 @@ const translations = {
     'line.feature3': 'On-site expo updates',
 
     // Project 3 — WBR Dashboard
-    'project3.desc': 'AI-driven weekly business review dashboard with automated cross-region big data updates. Covers MEA, EU, and JP regions, supports Weekly Overview for a quick snapshot, and enables Deep Dive into individual seller-level marketing analysis.',
+    'project3.desc': 'An automated data dashboard designed for executive Weekly Business Reviews (WBR). Replaces time-consuming manual reporting by auto-integrating big data across Middle East, Europe, and Japan. Beyond providing a clear macro-level Weekly Overview, it enables direct Drill-down into individual seller marketing bottlenecks. Minimizes weekly report prep time so the team can focus on solving problems rather than organizing data.',
     'project3.link': 'View on GitHub <span>&rarr;</span>',
     'wbr.stat.latest': 'Latest Week',
     'wbr.stat.markets': 'Market Regions',
