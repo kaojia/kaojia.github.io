@@ -60,7 +60,7 @@ const translations = {
 
     // Project 3 — WBR Dashboard
     'project3.desc': '專為高階營運會議 (WBR) 設計的自動化數據看板。取代傳統耗時的人工拉表，自動整合中東、歐洲與日本三大賽道的大數據。除了提供一目瞭然的宏觀表現 (Weekly Overview)，更能直接 Drill-down 挖掘個別賣家的行銷瓶頸。將每週報表準備時間極小化，讓團隊核心精力專注於「解決問題」而非「整理數據」。',
-    'project3.link': 'View on GitHub <span>&rarr;</span>',
+    'wbr.mock': '示意圖・資料為虛構',
     'wbr.stat.latest': '最新週報',
     'wbr.stat.markets': '市場區域',
     'wbr.stat.updated': '每週更新',
@@ -185,7 +185,7 @@ const translations = {
 
     // Project 3 — WBR Dashboard
     'project3.desc': 'An automated data dashboard designed for executive Weekly Business Reviews (WBR). Replaces time-consuming manual reporting by auto-integrating big data across Middle East, Europe, and Japan. Beyond providing a clear macro-level Weekly Overview, it enables direct Drill-down into individual seller marketing bottlenecks. Minimizes weekly report prep time so the team can focus on solving problems rather than organizing data.',
-    'project3.link': 'View on GitHub <span>&rarr;</span>',
+    'wbr.mock': 'Illustrative · sample data',
     'wbr.stat.latest': 'Latest Week',
     'wbr.stat.markets': 'Market Regions',
     'wbr.stat.updated': 'Weekly Updated',
