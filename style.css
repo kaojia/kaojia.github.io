@@ -383,6 +383,8 @@ img {
   position: relative;
   z-index: 1;
   padding-top: 120px;
+  /* Reserve room for the absolutely positioned .hero-scroll hint so short screens don't overlap the stats */
+  padding-bottom: 120px;
 }
 
 .hero-label {
@@ -2362,6 +2364,7 @@ img {
 
   .hero-content {
     padding-top: 100px;
+    padding-bottom: 120px;
   }
 
   .skills-grid {
