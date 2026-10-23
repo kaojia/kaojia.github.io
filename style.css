@@ -2484,3 +2484,15 @@ img {
     transform: none;
   }
 }
+
+/* Phase label at the start of a timeline paragraph (one role, several scope changes) */
+.tl-phase {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--color-accent-light);
+  margin-bottom: 4px;
+}
+
+.tl-desc + .tl-desc { margin-top: 12px; }

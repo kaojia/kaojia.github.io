@@ -21,7 +21,7 @@ const translations = {
     // About
     'about.label': '—\u00a0 Who I Am',
     'about.title': 'Bridging AI Technology<br />with Business Strategy',
-    'about.text': '擁有公共衛生與數據分析背景，目前任職於 Amazon，負責跨境電商市場拓展。熱衷於運用 AI 與自動化技術解決實際商業問題，從 LINE AI Agent 到市場情報自動化系統，持續探索 AI 在商業場景中的應用可能。',
+    'about.text': '擁有公共衛生與數據分析背景，目前在 Amazon Global Selling Taiwan 擔任 Sales Consultant，負責澳洲與中東市場的賣家招商與經營。熱衷於運用 AI 與自動化技術解決實際商業問題，從 LINE AI Agent 到市場情報自動化系統，持續探索 AI 在商業場景中的應用可能。',
     'about.cta': 'More About Me',
 
     // Stats
@@ -173,7 +173,7 @@ const translations = {
     // About
     'about.label': '—\u00a0 Who I Am',
     'about.title': 'Bridging AI Technology<br />with Business Strategy',
-    'about.text': 'With a background in public health and data analytics, I currently work at Amazon leading cross-border e-commerce market expansion. Passionate about leveraging AI and automation to solve real business problems — from LINE AI Agents to automated market intelligence systems, I continuously explore how AI can drive business value.',
+    'about.text': 'With a background in public health and data analytics, I work at Amazon Global Selling Taiwan as a Sales Consultant, recruiting and growing sellers for the Australia and Middle East marketplaces. Passionate about leveraging AI and automation to solve real business problems — from LINE AI Agents to automated market intelligence systems, I continuously explore how AI can drive business value.',
     'about.cta': 'More About Me',
 
     // Stats
