@@ -230,6 +230,17 @@ document.addEventListener('DOMContentLoaded', () => {
   animateCounters();
   updateActiveNav();
 
+  // Theme toggle button
+  const themeBtn = document.getElementById('themeToggle');
+  if (themeBtn) {
+    themeBtn.addEventListener('click', () => {
+      const root = document.documentElement;
+      const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
+    });
+  }
+
   // Language toggle button
   const langBtn = document.getElementById('langToggle');
   if (langBtn) {
