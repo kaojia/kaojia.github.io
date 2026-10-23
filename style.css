@@ -1761,6 +1761,235 @@ img {
   }
 }
 
+/* ---------- SELLER GUIDE SHOWCASE ---------- */
+.project-card--guide {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+}
+
+.project-card--guide .project-info {
+  padding: 40px 36px;
+}
+
+.guide-showcase {
+  background: #f6f8fb;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: var(--font-en), var(--font-tc);
+  color: #0b2138;
+}
+
+/* Guide header */
+.guide-header {
+  background: #0b2138;
+  padding: 18px 20px;
+  color: #fff;
+}
+
+.guide-title {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.guide-search {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.65);
+}
+
+/* Market cards */
+.guide-markets {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 14px 20px 0;
+}
+
+.guide-market {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 10px 8px;
+  text-align: center;
+}
+
+.guide-market--active {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+.guide-flag {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.guide-market-name {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.guide-market-sub {
+  display: block;
+  font-size: 0.55rem;
+  color: #5b7288;
+  margin-top: 2px;
+}
+
+/* Stage filters */
+.guide-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px 20px 0;
+}
+
+.guide-pill {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: #5b7288;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  padding: 3px 10px;
+  border-radius: 100px;
+}
+
+.guide-pill--active {
+  color: #fff;
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+/* Progress checklist */
+.guide-checklist {
+  flex: 1;
+  margin: 12px 20px 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+
+.guide-progress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.guide-progress-bar {
+  flex: 1;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.guide-progress-bar span {
+  display: block;
+  height: 100%;
+  background: #16a34a;
+  border-radius: 100px;
+}
+
+.guide-progress-num {
+  font-size: 0.62rem;
+  color: #5b7288;
+}
+
+.guide-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.7rem;
+  padding: 5px 0;
+  border-top: 1px solid #f1f5f9;
+}
+
+.guide-item--done {
+  color: #94a3b8;
+  text-decoration: line-through;
+}
+
+.guide-check {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 4px;
+  font-size: 0.55rem;
+  line-height: 11px;
+  text-align: center;
+  color: #fff;
+}
+
+.guide-item--done .guide-check {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+/* Guide stats */
+.guide-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #e2e8f0;
+  background: #fff;
+}
+
+.guide-stat-item {
+  padding: 12px 8px;
+  text-align: center;
+  border-right: 1px solid #e2e8f0;
+}
+
+.guide-stat-item:last-child {
+  border-right: none;
+}
+
+.guide-stat-num {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+
+.guide-stat-label {
+  display: block;
+  font-size: 0.6rem;
+  color: #5b7288;
+  margin-top: 2px;
+}
+
+/* Guide responsive */
+@media (max-width: 1024px) {
+  .project-card--guide {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .guide-markets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .guide-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .guide-stat-item:nth-child(2) {
+    border-right: none;
+  }
+}
+
 /* ---------- QUOTE BANNER ---------- */
 .quote-banner {
   padding: 100px 0;
