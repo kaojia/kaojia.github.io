@@ -33,4 +33,4 @@ HTML / CSS / JavaScript (pure front end, no framework)
 
 ## Updating
 
-After changing `style.css` or any `.js` file, also bump the `?v=` version suffix on those file URLs in `index.html` (e.g. `?v=20261023e` → `?v=20261101a`) so browsers fetch the new version instead of serving the old cached file.
+After changing `style.css` or any `.js` file, also bump the `?v=` version suffix on those file URLs in `index.html` (e.g. `?v=20261023f` → `?v=20261101a`) so browsers fetch the new version instead of serving the old cached file.

@@ -98,6 +98,20 @@ const translations = {
     'exp3.period': 'Background',
     'exp3.title': 'Public Health & Data Analysis',
     'exp3.desc': '公共衛生學背景，具備紮實的數據分析與研究方法論基礎。曾參與疾管署、中經院等機構的研究專案與數據視覺化工作。',
+    // Impact & experience timeline
+    'impact.subtitle': '從招募到市場拓展的關鍵成果',
+    'impact1.dsc': '以單一負責人從無到有建立台灣賣家進入中東的招商管道，首年 GMV 即超越年度目標。',
+    'impact2.dsc': '撰寫 80 頁賣家操作手冊，含章節連結設計，將賣家問題回覆時間降低約 40%，讓團隊專注高價值工作。',
+    'impact3.dsc': 'Python 爬蟲與潛力評分系統，將招募轉換率從 <3% 提升至 >10%，影響 12 人業務團隊。',
+    'impact4.dsc': '進入市場的第一年，即在 Q4 旺季的區域綜合指標中排名第一。',
+    'tl1.p1.phase': '2024.05 · MENA 從 0 到 1',
+    'tl1.p1': '以單一負責人開拓台灣賣家進入中東市場：與 5 家物流商合作，把運費降到接近澳洲市場水準；撰寫 80 頁賣家手冊，節省團隊約 40% 問題回覆時間； 透過紅毯計劃招募台灣頭部品牌。首年 GMV 即超越年度目標，並在 Q4 旺季的區域綜合排名中拿下第一。',
+    'tl1.p2.phase': '2026.04 · 接管澳洲市場',
+    'tl1.p2': '同時負責 AU 與 MENA 的新賣家招商與既有賣家經營，管理 400+ 位賣家；建立 AI 批量客製化信件系統，以及兩個各 200 人的 LINE 賣家社群。',
+    'tl1.p3.phase': '2026 年底 · 擴及歐洲站',
+    'tl1.p3': '負責範圍擴及歐洲站（EU）新賣家招商。',
+    'tl2.desc': '共同帶領台灣旗艦電商加速器計劃，200 位參與者，約五成為工廠賣家。統籌行銷、賣家教育、地區發展等部門資源。新增品類專題、AI 應用課程、二代接班講座。100% 參與賣家皆達成銷售。',
+    'tl3.desc': '用 Python 爬蟲從第三方平台提取並評分高潛力賣家名單，將業務團隊 conversion rate 從 <3%（基準）提升至 >10%。為 12 人團隊提供週報自動化與多站點銷售分析。',
 
     // Skills
     'skills.label': '—\u00a0 Skills & Tools',
@@ -250,6 +264,20 @@ const translations = {
     'exp3.period': 'Background',
     'exp3.title': 'Public Health & Data Analysis',
     'exp3.desc': 'Background in public health with solid foundations in data analysis and research methodology. Contributed to research projects and data visualization at Taiwan CDC and CIER.',
+    // Impact & experience timeline
+    'impact.subtitle': 'Key results, from seller recruitment to market expansion',
+    'impact1.dsc': 'Built the channel for Taiwanese sellers entering the Middle East from scratch as the sole owner, beating the annual GMV target in year one.',
+    'impact2.dsc': 'Wrote an 80-page seller playbook with linked chapters, cutting seller question response time by about 40% so the team could focus on higher-value work.',
+    'impact3.dsc': 'Built a Python scraper and lead-scoring system that lifted recruitment conversion from <3% to >10% for a 12-person sales team.',
+    'impact4.dsc': 'Ranked #1 on the regional composite metrics during the Q4 peak season, in the very first year in market.',
+    'tl1.p1.phase': '2024.05 · MENA, zero to one',
+    'tl1.p1': 'As the sole owner, opened the Middle East to Taiwanese sellers: partnered with 5 logistics providers to bring shipping costs close to Australia levels, wrote an 80-page seller playbook that saved the team about 40% of question response time, and recruited leading Taiwanese brands through the Red Carpet program. Beat the annual GMV target in year one and ranked #1 on the regional composite metrics in the Q4 peak.',
+    'tl1.p2.phase': '2026.04 · Took over Australia',
+    'tl1.p2': 'Now covers both new-seller recruitment and existing-seller management for AU and MENA, managing 400+ sellers. Built an AI system for personalised bulk outreach and two LINE seller communities of 200 members each.',
+    'tl1.p3.phase': 'Late 2026 · Expanding to Europe',
+    'tl1.p3': 'Scope expanded to new-seller recruitment for the European marketplaces (EU).',
+    'tl2.desc': 'Co-leads Taiwan\'s flagship e-commerce accelerator: 200 participants, about half of them manufacturers. Coordinates resources across marketing, seller education and regional development, and added category deep-dives, AI courses and next-generation succession talks. 100% of participating sellers made sales.',
+    'tl3.desc': 'Built a Python scraper that pulls and scores high-potential sellers from third-party platforms, lifting the sales team\'s conversion rate from <3% (baseline) to >10%. Automated weekly reports and multi-marketplace sales analysis for a 12-person team.',
 
     // Skills
     'skills.label': '—\u00a0 Skills & Tools',
