@@ -2458,3 +2458,26 @@ img {
 .theme-toggle-icon--sun { display: none; }
 [data-theme="light"] .theme-toggle-icon--sun { display: inline; }
 [data-theme="light"] .theme-toggle-icon--moon { display: none; }
+
+/* ---------- REDUCED MOTION ---------- */
+/* Honour the system "reduce motion" setting: no fades, slides, tickers or smooth scrolling */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  .project-card:hover,
+  .lang-toggle:hover,
+  .theme-toggle:hover {
+    transform: none;
+  }
+}

@@ -2,6 +2,9 @@
    Jenny Kao — Personal Website Scripts
    ============================================ */
 
+// Visitors who turn on "reduce motion" in their system settings get a still page
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 // ---------- NAVBAR SCROLL EFFECT ----------
 const navbar = document.getElementById('navbar');
 
@@ -16,7 +19,7 @@ window.addEventListener('scroll', () => {
 // ---------- HERO PARALLAX MOUSE TRACKING ----------
 (function initHeroParallax() {
   const hero = document.getElementById('hero');
-  if (!hero) return;
+  if (!hero || prefersReducedMotion) return;
 
   const layers = hero.querySelectorAll('[data-speed]');
   let targetX = 0;
@@ -171,6 +174,11 @@ function animateCounters() {
         if (entry.isIntersecting) {
           const el = entry.target;
           const target = parseInt(el.getAttribute('data-target'));
+          if (prefersReducedMotion) {
+            el.textContent = target;
+            observer.unobserve(el);
+            return;
+          }
           const duration = 1500;
           const start = performance.now();
 
@@ -237,6 +245,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const root = document.documentElement;
       const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
       root.setAttribute('data-theme', next);
+      document.querySelector('meta[name="theme-color"]')
+        ?.setAttribute('content', next === 'light' ? '#fafaf9' : '#0a0a0a');
       try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
     });
   }

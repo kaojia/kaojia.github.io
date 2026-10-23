@@ -8,6 +8,8 @@
   const canvas = document.getElementById('heroParticles');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
+  // Draw one still frame instead of animating when the visitor asks for less motion
+  const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   // ---------- CONFIG ----------
   const PARTICLE_COUNT = 120;
@@ -204,6 +206,7 @@
       p.originX = Math.random() * width;
       p.originY = Math.random() * height;
     });
+    if (REDUCED_MOTION) draw();
   });
 
   // Visibility
@@ -211,7 +214,7 @@
     if (document.hidden && rafId) {
       cancelAnimationFrame(rafId);
       rafId = null;
-    } else if (!document.hidden && !rafId) {
+    } else if (!document.hidden && !rafId && !REDUCED_MOTION) {
       rafId = requestAnimationFrame(loop);
     }
   });
@@ -219,5 +222,9 @@
   // ---------- INIT ----------
   resize();
   initParticles();
-  rafId = requestAnimationFrame(loop);
+  if (REDUCED_MOTION) {
+    draw();
+  } else {
+    rafId = requestAnimationFrame(loop);
+  }
 })();
