@@ -7,6 +7,7 @@ AI & Cross-Border E-Commerce 個人網站，展示 AI 應用作品集與專業�
 ## Features
 
 - 🌐 中英文雙語切換
+- ☀️ 白天／夜晚模式切換（預設白天）
 - ✨ 粒子互動效果（滑鼠聚集 / 分散）+ 光暈視差
 - 📰 Amazon Market News AU/MENA — 即時新聞牆展示
 - 💬 LINE AI Agents — 雙聊天視窗模擬（ChatGPT API + Google Sheet）
@@ -27,7 +28,9 @@ HTML / CSS / JavaScript（純前端，無框架）
 | `script.js` | 互動效果、導航、動畫 |
 | `i18n.js` | 中英文翻譯引擎 |
 | `particles.js` | Hero 粒子系統 |
+| `favicon.svg` / `apple-touch-icon.png` | 網站圖示 |
+| `og-image.png` | 分享到 LINE、LinkedIn 等平台時的預覽圖（1200×630） |
 
 ## Updating
 
-改了 `style.css` 或任何 `.js` 後，記得把 `index.html` 裡這些檔案網址後面的 `?v=` 版本號一起改掉（例如 `?v=20261023b` → `?v=20261101a`），瀏覽器才會抓新版，不會用快取裡的舊檔。
+改了 `style.css` 或任何 `.js` 後，記得把 `index.html` 裡這些檔案網址後面的 `?v=` 版本號一起改掉（例如 `?v=20261023c` → `?v=20261101a`），瀏覽器才會抓新版，不會用快取裡的舊檔。
