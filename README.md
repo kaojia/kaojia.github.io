@@ -2,35 +2,35 @@
 
 🔗 **https://kaojia.github.io**
 
-AI & Cross-Border E-Commerce 個人網站，展示 AI 應用作品集與專業經歷。
+Personal website on AI & cross-border e-commerce, showcasing an AI project portfolio and professional experience.
 
 ## Features
 
-- 🌐 中英文雙語切換
-- ☀️ 白天／夜晚模式切換（預設白天）
-- ✨ 粒子互動效果（滑鼠聚集 / 分散）+ 光暈視差
-- 📰 Amazon Market News AU/MENA — 即時新聞牆展示
-- 💬 LINE AI Agents — 雙聊天視窗模擬（ChatGPT API + Google Sheet）
-- 📊 WBR Expansion Dashboard — 數據報表互動展示
-- 📋 Cross-Border CRM Pipeline — 多國狀態管理展示
-- 📘 Amazon Seller Playbooks — 賣家開站手冊預覽
+- 🌐 Chinese / English language toggle
+- ☀️ Light / dark mode toggle (light by default)
+- ✨ Interactive particle effect (gathers / scatters with the mouse) + glow parallax
+- 📰 Amazon Market News AU/MENA — live news wall showcase
+- 💬 LINE AI Agents — dual chat window simulation (ChatGPT API + Google Sheet)
+- 📊 WBR Expansion Dashboard — interactive report showcase
+- 📋 Cross-Border CRM Pipeline — multi-country status management showcase
+- 📘 Amazon Seller Playbooks — seller launch guide previews
 
 ## Tech Stack
 
-HTML / CSS / JavaScript（純前端，無框架）
+HTML / CSS / JavaScript (pure front end, no framework)
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `index.html` | 主頁面 |
-| `style.css` | 樣式 |
-| `script.js` | 互動效果、導航、動畫 |
-| `i18n.js` | 中英文翻譯引擎 |
-| `particles.js` | Hero 粒子系統 |
-| `favicon.svg` / `apple-touch-icon.png` | 網站圖示 |
-| `og-image.png` | 分享到 LINE、LinkedIn 等平台時的預覽圖（1200×630） |
+| `index.html` | Main page |
+| `style.css` | Styles |
+| `script.js` | Interactions, navigation, animations |
+| `i18n.js` | Chinese / English translation engine |
+| `particles.js` | Hero particle system |
+| `favicon.svg` / `apple-touch-icon.png` | Site icons |
+| `og-image.png` | Preview image shown when shared on LINE, LinkedIn, etc. (1200×630) |
 
 ## Updating
 
-改了 `style.css` 或任何 `.js` 後，記得把 `index.html` 裡這些檔案網址後面的 `?v=` 版本號一起改掉（例如 `?v=20261023d` → `?v=20261101a`），瀏覽器才會抓新版，不會用快取裡的舊檔。
+After changing `style.css` or any `.js` file, also bump the `?v=` version suffix on those file URLs in `index.html` (e.g. `?v=20261023d` → `?v=20261101a`) so browsers fetch the new version instead of serving the old cached file.
